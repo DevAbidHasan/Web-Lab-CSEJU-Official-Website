@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const facultyMembers = [
   {
@@ -8,7 +8,6 @@ const facultyMembers = [
     image: "https://i.ibb.co.com/LDXSz08Q/image.png",
     email: "rahman@cse.juniv.edu",
     linkedin: "#",
-    github: "#",
   },
   {
     name: "Dr. Jugal Krishna Das",
@@ -16,15 +15,13 @@ const facultyMembers = [
     image: "https://i.ibb.co.com/twCCyMz6/image.png",
     email: "farzana@cse.juniv.edu",
     linkedin: "#",
-    github: "#",
   },
   {
     name: "Dr. Mohammad Shorif Uddin",
-    title: " Professor",
+    title: "Professor",
     image: "https://i.ibb.co.com/DFXGyLf/image.png",
     email: "tareq@cse.juniv.edu",
     linkedin: "#",
-    github: "#",
   },
   {
     name: "Dr. Mohammad Zahidur Rahman",
@@ -32,7 +29,6 @@ const facultyMembers = [
     image: "https://i.ibb.co.com/RWCMytN/image.png",
     email: "nusrat@cse.juniv.edu",
     linkedin: "#",
-    github: "#",
   },
 ];
 
@@ -58,7 +54,7 @@ const Faculty = () => {
             key={index}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
           >
-            <div className="w-full p-6 h-64 overflow-hidden">
+            <div className="w-full h-64 overflow-hidden">
               <img
                 src={member.image}
                 alt={member.name}
@@ -72,23 +68,33 @@ const Faculty = () => {
               </h3>
               <p className="text-indigo-600 inter text-sm mb-4">{member.title}</p>
 
-              <div className="flex justify-center gap-5 mt-4 text-slate-600">
+              <div className="flex justify-center gap-5 mt-4 text-slate-600 mb-4">
                 <a
                   href={`mailto:${member.email}`}
                   className="hover:text-indigo-600 transition"
                 >
                   <FaEnvelope size={18} />
                 </a>
-                <a href={member.linkedin} className="hover:text-indigo-600 transition">
+                <a
+                  href={member.linkedin}
+                  className="hover:text-indigo-600 transition"
+                >
                   <FaLinkedin size={18} />
                 </a>
-                <a href={member.github} className="hover:text-indigo-600 transition">
-                  <FaGithub size={18} />
-                </a>
               </div>
+
+              <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full inter text-sm transition">
+                Details
+              </button>
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="text-center mt-12">
+        <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full inter text-sm transition">
+          All Faculties
+        </button>
       </div>
     </section>
   );
