@@ -79,13 +79,13 @@ const Hero = () => {
         >
           <a
             href="#about"
-            className="bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-700 hover:to-indigo-600 text-white font-medium rounded-full px-8 py-3 shadow-md hover:shadow-lg transition-all duration-300 active:scale-95 inter"
+            className="bg-gradient-to-r shadow-2xl shadow-black from-indigo-600 to-indigo-500 hover:from-indigo-700 hover:to-indigo-600 text-white font-medium rounded-full px-8 py-3 hover:shadow-pink-200 transition-all duration-300 active:scale-95 inter"
           >
-            Explore More
+            Read Blogs
           </a>
           <a
             href="#contact"
-            className="border border-indigo-400 text-indigo-700 hover:bg-indigo-50 font-medium rounded-full px-8 py-3 transition-all duration-300 active:scale-95 inter"
+            className="border shadow-2xl shadow-blue-300 border-indigo-400 text-indigo-700 hover:bg-indigo-50 font-medium rounded-full px-8 py-3 transition-all duration-300 active:scale-95 inter"
           >
             Contact Us
           </a>

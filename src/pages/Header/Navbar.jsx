@@ -69,15 +69,15 @@ const Navbar = () => {
             Academics
           </Link>
           <Link
-            to="/researches"
-            onClick={() => setActiveLink("Researches")}
+            to="/admission"
+            onClick={() => setActiveLink("Apply")}
             className={`transition ${
-              activeLink === "Researches"
+              activeLink === "Apply"
                 ? "text-indigo-600 font-semibold"
                 : "hover:text-indigo-600"
             }`}
           >
-            Researches
+            Admission
           </Link>
           <Link
             to="/notices"
@@ -207,18 +207,18 @@ const Navbar = () => {
           Academics
         </Link>
         <Link
-          to="/researches"
+          to="/Apply"
           onClick={() => {
-            setActiveLink("Researches");
+            setActiveLink("Apply");
             setMenuOpen(false);
           }}
           className={`text-lg font-medium transition ${
-            activeLink === "Researches"
+            activeLink === "admission"
               ? "text-indigo-600 font-semibold"
               : "text-slate-800 hover:text-indigo-600"
           }`}
         >
-          Researches
+          Admission
         </Link>
         <Link
           to="/notices"
