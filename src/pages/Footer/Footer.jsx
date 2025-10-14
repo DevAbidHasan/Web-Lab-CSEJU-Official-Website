@@ -25,7 +25,7 @@ const Footer = () => {
             Privacy Policy
           </Link>
           <a
-            href="#"
+            href="#contact"
             className="font-medium text-gray-500 hover:text-black transition-all"
           >
             Contact
@@ -85,12 +85,11 @@ const Footer = () => {
 
         <p className="mt-10 text-center text-gray-500 text-sm px-4">
           Copyright © 2025{" "}
-          <a
-            href=""
+          <Link to="/"
             className="text-indigo-500 hover:text-indigo-600 font-medium transition-all"
           >
             CSE, JU
-          </a>
+          </Link>
           . All rights reserved.
         </p>
       </footer>

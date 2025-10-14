@@ -1,0 +1,98 @@
+// [
+//   {
+//     "name": "Md. Golam Moazzam",
+//     "title": "Professor & Chairperson",
+//     "image": "https://i.ibb.co.com/LDXSz08Q/image.png",
+//     "email": "golam@cse.juniv.edu",
+//     "phone": "+8801712345678",
+//     "office": "Room 301, CSE Building, JU",
+//     "linkedin": "#",
+//     "education": [
+//       "Ph.D. in Computer Science, University of Dhaka, 2010",
+//       "M.Sc. in Computer Science, Jahangirnagar University, 2006",
+//       "B.Sc. in Computer Science, Jahangirnagar University, 2004"
+//     ],
+//     "research": [
+//       "Artificial Intelligence",
+//       "Machine Learning",
+//       "Data Mining",
+//       "Computer Vision",
+//       "Pattern Recognition"
+//     ],
+//     "publications": [
+//       "Moazzam, M.G., et al. 'Research Article 1 on AI & ML', IEEE 2010",
+//       "Moazzam, M.G., et al. 'Research Article 2 on AI & ML', IEEE 2011",
+//       "Moazzam, M.G., et al. 'Research Article 3 on AI & ML', IEEE 2012",
+//       "Moazzam, M.G., et al. 'Research Article 4 on AI & ML', IEEE 2013",
+//       "Moazzam, M.G., et al. 'Research Article 5 on AI & ML', IEEE 2014",
+//       "Moazzam, M.G., et al. 'Research Article 6 on AI & ML', IEEE 2015",
+//       "Moazzam, M.G., et al. 'Research Article 7 on AI & ML', IEEE 2016",
+//       "Moazzam, M.G., et al. 'Research Article 8 on AI & ML', IEEE 2017",
+//       "Moazzam, M.G., et al. 'Research Article 9 on AI & ML', IEEE 2018",
+//       "Moazzam, M.G., et al. 'Research Article 10 on AI & ML', IEEE 2019",
+//       "Moazzam, M.G., et al. 'Research Article 11 on AI & ML', IEEE 2020",
+//       "Moazzam, M.G., et al. 'Research Article 12 on AI & ML', IEEE 2021",
+//       "Moazzam, M.G., et al. 'Research Article 13 on AI & ML', IEEE 2022",
+//       "Moazzam, M.G., et al. 'Research Article 14 on AI & ML', IEEE 2023",
+//       "Moazzam, M.G., et al. 'Research Article 15 on AI & ML', IEEE 2024",
+//       "Moazzam, M.G., et al. 'Research Article 16 on AI & ML', IEEE 2025",
+//       "Moazzam, M.G., et al. 'Research Article 17 on AI & ML', IEEE 2026",
+//       "Moazzam, M.G., et al. 'Research Article 18 on AI & ML', IEEE 2027",
+//       "Moazzam, M.G., et al. 'Research Article 19 on AI & ML', IEEE 2028",
+//       "Moazzam, M.G., et al. 'Research Article 20 on AI & ML', IEEE 2029",
+//       "Moazzam, M.G., et al. 'Research Article 21 on AI & ML', IEEE 2030",
+//       "Moazzam, M.G., et al. 'Research Article 22 on AI & ML', IEEE 2031",
+//       "Moazzam, M.G., et al. 'Research Article 23 on AI & ML', IEEE 2032",
+//       "Moazzam, M.G., et al. 'Research Article 24 on AI & ML', IEEE 2033",
+//       "Moazzam, M.G., et al. 'Research Article 25 on AI & ML', IEEE 2034"
+//     ]
+//   },
+//   {
+//     "name": "Dr. Jugal Krishna Das",
+//     "title": "Professor",
+//     "image": "https://i.ibb.co.com/twCCyMz6/image.png",
+//     "email": "jugal@cse.juniv.edu",
+//     "phone": "+8801723456789",
+//     "office": "Room 302, CSE Building, JU",
+//     "linkedin": "#",
+//     "education": [
+//       "Ph.D. in Software Engineering, BUET, 2012",
+//       "M.Sc. in Computer Science, Dhaka University, 2008",
+//       "B.Sc. in Computer Science, Jahangirnagar University, 2005"
+//     ],
+//     "research": [
+//       "Software Engineering",
+//       "Agile Development",
+//       "Human-Computer Interaction",
+//       "Software QA",
+//       "Requirements Engineering"
+//     ],
+//     "publications": [
+//       "Das, J.K., et al. 'Research Article 1 on Software Engineering', ACM 2012",
+//       "Das, J.K., et al. 'Research Article 2 on Software Engineering', ACM 2013",
+//       "Das, J.K., et al. 'Research Article 3 on Software Engineering', ACM 2014",
+//       "Das, J.K., et al. 'Research Article 4 on Software Engineering', ACM 2015",
+//       "Das, J.K., et al. 'Research Article 5 on Software Engineering', ACM 2016",
+//       "Das, J.K., et al. 'Research Article 6 on Software Engineering', ACM 2017",
+//       "Das, J.K., et al. 'Research Article 7 on Software Engineering', ACM 2018",
+//       "Das, J.K., et al. 'Research Article 8 on Software Engineering', ACM 2019",
+//       "Das, J.K., et al. 'Research Article 9 on Software Engineering', ACM 2020",
+//       "Das, J.K., et al. 'Research Article 10 on Software Engineering', ACM 2021",
+//       "Das, J.K., et al. 'Research Article 11 on Software Engineering', ACM 2022",
+//       "Das, J.K., et al. 'Research Article 12 on Software Engineering', ACM 2023",
+//       "Das, J.K., et al. 'Research Article 13 on Software Engineering', ACM 2024",
+//       "Das, J.K., et al. 'Research Article 14 on Software Engineering', ACM 2025",
+//       "Das, J.K., et al. 'Research Article 15 on Software Engineering', ACM 2026",
+//       "Das, J.K., et al. 'Research Article 16 on Software Engineering', ACM 2027",
+//       "Das, J.K., et al. 'Research Article 17 on Software Engineering', ACM 2028",
+//       "Das, J.K., et al. 'Research Article 18 on Software Engineering', ACM 2029",
+//       "Das, J.K., et al. 'Research Article 19 on Software Engineering', ACM 2030",
+//       "Das, J.K., et al. 'Research Article 20 on Software Engineering', ACM 2031",
+//       "Das, J.K., et al. 'Research Article 21 on Software Engineering', ACM 2032",
+//       "Das, J.K., et al. 'Research Article 22 on Software Engineering', ACM 2033",
+//       "Das, J.K., et al. 'Research Article 23 on Software Engineering', ACM 2034",
+//       "Das, J.K., et al. 'Research Article 24 on Software Engineering', ACM 2035",
+//       "Das, J.K., et al. 'Research Article 25 on Software Engineering', ACM 2036"
+//     ]
+//   }
+// ]
