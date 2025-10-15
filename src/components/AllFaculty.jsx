@@ -2,12 +2,18 @@ import React from "react";
 import { Link, useNavigate } from "react-router";
 import { AllFacultyMembers } from "./Faculty";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const AllFaculty = () => {
   const navigate = useNavigate();
 
   return (
     <div className="py-24 px-6 sm:px-10 md:px-16 lg:px-24 bg-gradient-to-b from-white to-indigo-50 min-h-screen">
+        <Helmet>
+            <title>
+                All Faculty Members || CSEJU
+            </title>
+        </Helmet>
       <h2 className="text-4xl md:text-5xl font-semibold poppins text-gray-800 mb-12 text-center">
         All <span className="text-indigo-600">Faculty Members</span>
       </h2>

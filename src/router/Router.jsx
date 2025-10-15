@@ -10,6 +10,10 @@ import Login from "../pages/AuthPages/Login";
 import Register from "../pages/AuthPages/Register";
 import Profile from "../pages/AuthPages/Profile";
 import PrivateRoute from "../provider/PrivateRoute";
+import Academics from "../components/Academics";
+import Notice from "../components/Notice";
+import Admission from "../components/Admission";
+import Apply from "../components/Apply";
 
 export const router = createBrowserRouter([
     {
@@ -44,6 +48,22 @@ export const router = createBrowserRouter([
             {
                 path : "register",
                 Component : Register
+            },
+            {
+                path:"academics",
+                Component : Academics
+            },
+            {
+                path : "notices",
+                Component : Notice
+            },
+            {
+                path :"apply",
+                Component : Apply
+            },
+            {
+                path :"admission",
+                Component : Admission
             },
             {
                 path :"user-profile",

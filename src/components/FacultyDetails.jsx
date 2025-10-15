@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router";
 import { AllFacultyMembers } from "./Faculty";
 import { FaEnvelope, FaLinkedin, FaPhone, FaBuilding } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const FacultyDetails = () => {
   const { id } = useParams();
@@ -27,6 +28,11 @@ const FacultyDetails = () => {
 
   return (
     <div className="py-24 px-6 sm:px-10 md:px-16 lg:px-24 bg-gradient-to-b from-white to-indigo-50 min-h-screen">
+        <Helmet>
+            <title>
+                Faculty Details || CSEJU
+            </title>
+        </Helmet>
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row gap-8">
         <div className="flex-shrink-0 w-full md:w-72">
           <div className="relative pb-full md:pb-auto md:h-auto">

@@ -10,17 +10,18 @@ import {
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-16 lg:px-24 xl:px-40 text-center overflow-hidden bg-gradient-to-b from-white via-indigo-50/40 to-white">
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-16 lg:px-24 xl:px-40 text-center overflow-hidden bg-gradient-to-b from-white via-indigo-50/40 to-white">
       {/* 💠 Gradient Background Blurs */}
       <div className="absolute -top-32 left-1/3 w-[600px] h-[600px] bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-200 blur-[140px] opacity-40 animate-pulse-slow"></div>
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-gradient-to-r from-blue-300 via-indigo-200 to-purple-300 blur-[120px] opacity-30 animate-pulse-slow delay-2000"></div>
 
       
       <div className="absolute inset-0 pointer-events-none">
-        <SiReact className="absolute text-indigo-500 text-3xl top-24 left-[15%] animate-float-slow" />
+        <SiReact className="absolute text-indigo-500  text-3xl top-24 left-[15%] animate-float-slow" />
         <SiPython className="absolute text-yellow-500 text-3xl top-1/3 right-[20%] animate-float-medium" />
         <SiJavascript className="absolute text-yellow-400 text-4xl bottom-1/3 left-[18%] animate-float-fast" />
         <SiCplusplus className="absolute text-blue-600 text-4xl bottom-20 right-[15%] animate-float-slow" />
@@ -78,14 +79,14 @@ const Hero = () => {
           className="flex flex-wrap items-center justify-center gap-4 mt-10"
         >
           <a
-            href="#about"
+            href="#events"
             className="bg-gradient-to-r shadow-2xl shadow-black from-indigo-600 to-indigo-500 hover:from-indigo-700 hover:to-indigo-600 text-white font-medium rounded-full px-8 py-3 hover:shadow-pink-200 transition-all duration-300 active:scale-95 inter"
           >
-            Read Blogs
+            Upcoming Events
           </a>
           <a
             href="#contact"
-            className="border shadow-2xl shadow-blue-300 border-indigo-400 text-indigo-700 hover:bg-indigo-50 font-medium rounded-full px-8 py-3 transition-all duration-300 active:scale-95 inter"
+            className="border bg-white shadow-2xl shadow-blue-300 border-indigo-400 text-indigo-700 hover:bg-indigo-50 font-medium rounded-full px-8 py-3 transition-all duration-300 active:scale-95 inter"
           >
             Contact Us
           </a>

@@ -94,12 +94,7 @@ const Research = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-16">
-          <button className="bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-700 hover:to-indigo-600 text-white font-medium rounded-full px-10 py-3 shadow-md hover:shadow-lg transition-all duration-300 active:scale-95">
-            Explore Research Projects
-          </button>
-        </div>
+        
       </div>
     </section>
   );

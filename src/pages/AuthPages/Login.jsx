@@ -5,6 +5,7 @@ import { AuthContext } from "../../provider/AuthContext";
 import { auth } from "../../firebase/firebase.init";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const Login = () => {
@@ -23,6 +24,7 @@ const Login = () => {
           icon: "success",
           button: "OK",
         });
+        navigate("/");
         
       })
       .catch((error) => {
@@ -49,6 +51,7 @@ const Login = () => {
         icon : "success",
         timer : 3000
     })
+    navigate("/");
     console.log(user);
     // You can now save user info to your database or context
   } catch (error) {
@@ -59,6 +62,11 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-white to-indigo-50 px-4 py-24">
+        <Helmet>
+            <title>
+                Login || CSEJU
+            </title>
+        </Helmet>
       <div className="bg-white shadow-xl rounded-2xl p-8 sm:p-10 md:p-12 w-full max-w-md">
         <h2 className="text-3xl font-semibold poppins text-center text-gray-800 mb-2">
           Login

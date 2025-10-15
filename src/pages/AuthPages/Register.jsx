@@ -1,28 +1,65 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import React, { useContext, useState } from "react";
+import { useLocation, useNavigate } from "react-router";
 import { FcGoogle } from "react-icons/fc";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase/firebase.init";
 import Swal from "sweetalert2";
+// import { pass } from "three/tsl";
+import { AuthContext } from "../../provider/AuthContext";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
-  const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+ const navigate=useNavigate();
+    const location = useLocation();
+    const {createUser,setUser,updateUser}=useContext(AuthContext);
+    const handleRegister=(e)=>{
+        e.preventDefault();
+        const name=e.target.name.value;
+        const email=e.target.email.value;
+        const photo="";
+        const password=e.target.password.value;
+        // console.log(name, email, photo, password);
+        setUser("");
+        createUser(email,password)
+        .then(result=>{
+            const user=result.user;
+            // console.log(result.user);
+            updateUser({displayName:name, photoURL:photo})
+            .then(()=>{
+                 setUser({...user, displayName:name, photoURL:photo});
+                    swal.fire({
+                    title: "Congratulations",
+                    text: "Registration successful !!!",
+                    icon: "success",
+                    button: "OK",
+                    });
+                    navigate("/");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+            })
+            .catch(error=>{
+                 swal.fire({
+                    title: "Failure",
+                    text: "Registration failed !!!",
+                    icon: "error",
+                    button: "OK",
+                    });
+                setUser(user);
+                
+            });
+        })
+        .catch(error=>{
+            swal.fire({
+                    title: "Failure",
+                    text: "Registration failed !!!",
+                    icon: "error",
+                    button: "OK",
+                    });
+            // console.log(error.message);
+        })
+        
+    }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Register data:", formData);
-    // registration logic here
-  };
+  
 
   const handleGoogleLogin = async (e) => {
    e.preventDefault();
@@ -39,6 +76,7 @@ const Register = () => {
          timer : 3000
      })
      console.log(user);
+     navigate("/");
      // You can now save user info to your database or context
    } catch (error) {
      console.error("❌ Google Login Failed:", error.message);
@@ -47,22 +85,25 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-white to-indigo-50 px-4 py-24">
+        <Helmet>
+            <title>
+                Registration || CSEJU
+            </title>
+        </Helmet>
       <div className="bg-white shadow-xl rounded-2xl p-8 sm:p-10 md:p-12 w-full max-w-md">
         <h2 className="text-3xl font-semibold poppins text-center text-gray-800 mb-6">
           Create an Account
         </h2>
         
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleRegister} className="space-y-5">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2 inter">
               Username
             </label>
             <input
               type="text"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
+              name="name"
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
               placeholder="Enter your username"
@@ -76,8 +117,6 @@ const Register = () => {
             <input
               type="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
               placeholder="Enter your email"
@@ -91,8 +130,6 @@ const Register = () => {
             <input
               type="password"
               name="password"
-              value={formData.password}
-              onChange={handleChange}
               required
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none transition"
               placeholder="Enter your password"
