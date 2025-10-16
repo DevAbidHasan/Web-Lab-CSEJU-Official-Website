@@ -1,6 +1,7 @@
-# 🎓 Education Portal Project
+# 🎓 CSE-JU Official Website
 
-![Project Banner](https://i.ibb.co/XYZ123/education-banner.png)
+<img width="1919" height="821" alt="Screenshot 2025-10-15 154156" src="https://github.com/user-attachments/assets/562fa545-ee38-4027-bbd0-9303cf9f9997" />
+
 
 A **modern, responsive education portal** built with **React** and **Tailwind CSS** to manage **articles, admissions, courses, workshops, notices, and academic information**.  
 
